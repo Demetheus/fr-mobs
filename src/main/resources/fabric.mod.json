@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fr-mobs",
+	"version": "${version}",
+	"name": "Forgotten Realms mobs",
+	"description": "A cool mod that adds many mobs known from 'DND'.",
+	"authors": [
+		"Demetheus"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fr-mobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gab.frmobs.FRMobs"
+		],
+		"client": [
+			"gab.frmobs.FRMobsClient"
+		],
+		"fabric-datagen": [
+			"gab.frmobs.FRMobsDataGenerator"
+		]
+	},
+	"mixins": [
+		"fr-mobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
